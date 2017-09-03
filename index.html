@@ -55,10 +55,12 @@
     <body onload='Redirect()'>
 
         <canvas id="c"></canvas>
-
+<audio id="my_audio" src="ar.mp3" loop="loop"></audio>
         <script>
 
         function Redirect() {
+		 
+			document.getElementById("my_audio").play();
         	setTimeout(function(){
 
         			window.location = "main.html";},5000);
